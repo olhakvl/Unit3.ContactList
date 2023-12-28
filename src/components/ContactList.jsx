@@ -16,7 +16,7 @@ export default function ContactList({setSelectedContactId}) {
       try {
         const response = await fetch("https://fsa-jsonplaceholder-69b5c48f1259.herokuapp.com/users");
         const jsonResponse = await response.json();
-        // console.log("Json response: ", jsonResponse);
+        console.log("Json response: ", jsonResponse);
         setContacts(jsonResponse);
       } catch (error) {
         console.log(error);
@@ -41,7 +41,7 @@ export default function ContactList({setSelectedContactId}) {
             </tr>
             {
                contacts.map((contact) => {
-                return <ContactRow key={contact.id} contact={contact}/>
+                return <ContactRow setSelectedContactId={setSelectedContactId} key={contact.id} contact={contact}/>
                })
              }
           </tbody>
