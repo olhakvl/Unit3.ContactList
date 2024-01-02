@@ -40,3 +40,19 @@
 .read-the-docs {
   color: #888;
 }
+
+body{
+  background-color: bisque;
+}
+
+table{
+  background-color: rgb(170, 231, 211);
+  padding: 30px;
+  border: 1px solid black;
+}
+
+td{
+  border: 1px solid rgb(0, 0, 0);
+  color: rgb(0, 0, 0);
+  padding: 10px;
+}
